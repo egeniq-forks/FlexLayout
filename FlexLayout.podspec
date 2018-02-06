@@ -12,7 +12,8 @@ Pod::Spec.new do |s|
   }
   
   s.platform     = :ios, "9.0"
-
+  s.tvos.deployment_target = "9.0"
+  
   s.source       = { :git => "https://github.com/lucdion/FlexLayout.git", :tag => "#{s.version}" }
   s.source_files  = "Sources/**/*.{swift,h,m}"
 
